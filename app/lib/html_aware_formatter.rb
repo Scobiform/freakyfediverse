@@ -33,6 +33,6 @@ class HtmlAwareFormatter
   end
 
   def linkify
-    text
+    TextFormatter.new(text, options).to_s
   end
 end
